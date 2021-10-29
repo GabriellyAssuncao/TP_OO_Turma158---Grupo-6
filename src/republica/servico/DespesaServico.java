@@ -22,8 +22,8 @@ public class DespesaServico extends Despesa{
 
     public void cadastrar(republica.modelo.Despesa despesa){
         descricao = JOptionPane.showInputDialog("Informe a descrição da             despesa: ");
-        valor = JOptionPane.showInputDialog("Informe o valor da            despesa: ");
-        //valor = Float.parseFloat(valorDp);
+        String valorDp = JOptionPane.showInputDialog("Informe o valor da            despesa: ");
+        valor = Float.parseFloat(valorDp);
         
         /*Despesa d = new Despesa(descricao, valor); erro nesta linha*/
 
@@ -47,7 +47,14 @@ public class DespesaServico extends Despesa{
 			
 			buffer.close();
 		} catch (IOException e) {
-			// TODO: handle exception
+			
+		}
+    }
+			
+			buffer.close();
+		} catch (IOException e) {
+			
 		}
     }
 }
+
