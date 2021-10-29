@@ -2,11 +2,11 @@ package republica.modelo;
 
 public class Despesa {
 	
-	private int id;
+    private int id;
     private String descricao;
     private float valor;
-    private Categoria categoria;
     
+
 
     public int getId() {
 		return id;
@@ -26,10 +26,3 @@ public class Despesa {
 	public void setValor(float valor) {
 		this.valor = valor;
 	}
-	public Categoria getCategoria() {
-		return categoria;
-	}
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
-}
